@@ -52,9 +52,9 @@ composer create-project hyperf/hyperf-skeleton server-provider
 composer create-project hyperf/hyperf-skeleton server-consumer
 ```
 
-> 为了更好的演示，创建项目时，我们全部一路回车，不对框架做任何设置，如果你想看我更改了哪些位置的话，你可以通过查看我 git 的提交变动来进行更改。
-> 服务提供者修改详见 git commit 记录为 `18594b9719b19eb6e79027d7260fd96e17339e34` 内容
-> 服务消费者修改详见 git commit 记录为 `3da8ec24e87da35b934aab8c4296af7a948e5341` 内容
+> 为了更好的演示，创建项目时，我们全部一路回车，不对框架做任何设置，如果你想看我更改了哪些位置的话，你可以通过查看我 git 的提交变动来进行更改。  
+> 服务提供者修改详见 git commit 记录为 `18594b9719b19eb6e79027d7260fd96e17339e34` 内容  
+> 服务消费者修改详见 git commit 记录为 `3da8ec24e87da35b934aab8c4296af7a948e5341` 内容  
 
 
 ## 安装 consul
