@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2bd73d85078e38acea8fc101f5a05a6",
+    "content-hash": "515a07868cd8161abd76c2e518aa2288",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -932,6 +932,59 @@
             "time": "2021-07-18T06:50:14+00:00"
         },
         {
+            "name": "hyperf/consul",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/consul.git",
+                "reference": "9df7cf638026a80ae022bb88438fb64c8dfe619b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/consul/zipball/9df7cf638026a80ae022bb88438fb64c8dfe619b",
+                "reference": "9df7cf638026a80ae022bb88438fb64c8dfe619b",
+                "shasum": ""
+            },
+            "require": {
+                "hyperf/guzzle": "~2.2.0",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\Consul\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\Consul\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Consul Client for Hyperf.",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "consul",
+                "consul-client",
+                "hyperf",
+                "php",
+                "swoole"
+            ],
+            "support": {
+                "docs": "https://hyperf.wiki",
+                "issues": "https://github.com/hyperf/hyperf/issues",
+                "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                "source": "https://github.com/hyperf/hyperf"
+            },
+            "time": "2021-07-18T06:50:14+00:00"
+        },
+        {
             "name": "hyperf/contract",
             "version": "v2.2.8",
             "source": {
@@ -1614,6 +1667,122 @@
             "time": "2021-10-25T01:29:21+00:00"
         },
         {
+            "name": "hyperf/json-rpc",
+            "version": "v2.2.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/json-rpc.git",
+                "reference": "c6623b3a6c28912a9a62cd67936b4a74e0bc8514"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/json-rpc/zipball/c6623b3a6c28912a9a62cd67936b4a74e0bc8514",
+                "reference": "c6623b3a6c28912a9a62cd67936b4a74e0bc8514",
+                "shasum": ""
+            },
+            "require": {
+                "hyperf/contract": "~2.2.0",
+                "hyperf/http-message": "~2.2.0",
+                "hyperf/load-balancer": "~2.2.0",
+                "hyperf/rpc": "~2.2.0",
+                "hyperf/utils": "~2.2.0",
+                "php": ">=7.2",
+                "psr/container": "^1.0|^2.0"
+            },
+            "suggest": {
+                "hyperf/event": "Register the objects to ProtocolManager automatically.",
+                "hyperf/framework": "Register the objects to ProtocolManager automatically.",
+                "hyperf/guzzle": "Required to use JSON RPC with HTTP protocol.",
+                "hyperf/rpc-client": "Reqiured to use JSON RPC in hyperf rpc client.",
+                "hyperf/rpc-server": "Reqiured to use JSON RPC in hyperf rpc server."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\JsonRpc\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\JsonRpc\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A JSON RPC component for Hyperf RPC Server or Client.",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "hyperf",
+                "json-rpc",
+                "php",
+                "swoole"
+            ],
+            "support": {
+                "docs": "https://hyperf.wiki",
+                "issues": "https://github.com/hyperf/hyperf/issues",
+                "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                "source": "https://github.com/hyperf/hyperf"
+            },
+            "time": "2021-10-28T10:13:44+00:00"
+        },
+        {
+            "name": "hyperf/load-balancer",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/load-balancer.git",
+                "reference": "1d50801b6747a75071f11775f70e4e4a9f6096f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/load-balancer/zipball/1d50801b6747a75071f11775f70e4e4a9f6096f7",
+                "reference": "1d50801b6747a75071f11775f70e4e4a9f6096f7",
+                "shasum": ""
+            },
+            "require": {
+                "markrogoyski/math-php": "^2.0",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\LoadBalancer\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\LoadBalancer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A load balancer library for Hyperf.",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "hyperf",
+                "load-balancer",
+                "php",
+                "swoole"
+            ],
+            "support": {
+                "docs": "https://hyperf.wiki",
+                "issues": "https://github.com/hyperf/hyperf/issues",
+                "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                "source": "https://github.com/hyperf/hyperf"
+            },
+            "time": "2021-07-18T06:50:14+00:00"
+        },
+        {
             "name": "hyperf/logger",
             "version": "v2.2.14",
             "source": {
@@ -1998,6 +2167,119 @@
             "time": "2021-09-22T01:46:38+00:00"
         },
         {
+            "name": "hyperf/rpc",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/rpc.git",
+                "reference": "2e59e42de06472bb63ebc1e94e353f66e25aadfa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/rpc/zipball/2e59e42de06472bb63ebc1e94e353f66e25aadfa",
+                "reference": "2e59e42de06472bb63ebc1e94e353f66e25aadfa",
+                "shasum": ""
+            },
+            "require": {
+                "hyperf/contract": "~2.2.0",
+                "hyperf/utils": "~2.2.0",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                },
+                "hyperf": []
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\Rpc\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A rpc basic library for Hyperf.",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "hyperf",
+                "php",
+                "rpc",
+                "swoole"
+            ],
+            "support": {
+                "docs": "https://hyperf.wiki",
+                "issues": "https://github.com/hyperf/hyperf/issues",
+                "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                "source": "https://github.com/hyperf/hyperf"
+            },
+            "time": "2021-07-18T06:50:14+00:00"
+        },
+        {
+            "name": "hyperf/rpc-client",
+            "version": "v2.2.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/rpc-client.git",
+                "reference": "3daaf810ffff0ebc067def04d4c790f3b0cbf4d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/rpc-client/zipball/3daaf810ffff0ebc067def04d4c790f3b0cbf4d3",
+                "reference": "3daaf810ffff0ebc067def04d4c790f3b0cbf4d3",
+                "shasum": ""
+            },
+            "require": {
+                "hyperf/load-balancer": "~2.2.0",
+                "hyperf/rpc": "~2.2.0",
+                "hyperf/utils": "~2.2.0",
+                "php": ">=7.2",
+                "psr/container": "^1.0|^2.0"
+            },
+            "suggest": {
+                "hyperf/di": "For better container experience.",
+                "hyperf/pool": "Required to use connection pool.",
+                "hyperf/service-governance": "Required to fetch the nodes info from service governance."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\RpcClient\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\RpcClient\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "An abstract rpc server component for Hyperf.",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "hyperf",
+                "json-rpc",
+                "php",
+                "rpc",
+                "rpc-client",
+                "swoole"
+            ],
+            "support": {
+                "docs": "https://hyperf.wiki",
+                "issues": "https://github.com/hyperf/hyperf/issues",
+                "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                "source": "https://github.com/hyperf/hyperf"
+            },
+            "time": "2021-11-12T11:07:43+00:00"
+        },
+        {
             "name": "hyperf/server",
             "version": "v2.2.14.1",
             "source": {
@@ -2057,6 +2339,121 @@
                 "source": "https://github.com/hyperf/hyperf"
             },
             "time": "2021-11-01T03:02:11+00:00"
+        },
+        {
+            "name": "hyperf/service-governance",
+            "version": "v2.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/service-governance.git",
+                "reference": "48234252f637178094aee608a08d272e164d0467"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/service-governance/zipball/48234252f637178094aee608a08d272e164d0467",
+                "reference": "48234252f637178094aee608a08d272e164d0467",
+                "shasum": ""
+            },
+            "require": {
+                "hyperf/consul": "~2.2.0",
+                "hyperf/contract": "~2.2.0",
+                "php": ">=7.2"
+            },
+            "suggest": {
+                "hyperf/event": "Required to use RegisterServiceListener.",
+                "hyperf/framework": "Required to use RegisterServiceListener.",
+                "hyperf/service-governance-consul": "Required to use consul adapter.",
+                "hyperf/service-governance-nacos": "Required to use nacos adapter."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\ServiceGovernance\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\ServiceGovernance\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A service governance component for Hyperf.",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "hyperf",
+                "php",
+                "service-governance",
+                "swoole"
+            ],
+            "support": {
+                "docs": "https://hyperf.wiki",
+                "issues": "https://github.com/hyperf/hyperf/issues",
+                "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                "source": "https://github.com/hyperf/hyperf"
+            },
+            "time": "2021-08-10T02:20:43+00:00"
+        },
+        {
+            "name": "hyperf/service-governance-consul",
+            "version": "v2.2.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/service-governance-consul.git",
+                "reference": "49800f559aa8a0b1a97a3fe7b30697ed533c1d70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/service-governance-consul/zipball/49800f559aa8a0b1a97a3fe7b30697ed533c1d70",
+                "reference": "49800f559aa8a0b1a97a3fe7b30697ed533c1d70",
+                "shasum": ""
+            },
+            "require": {
+                "hyperf/consul": "~2.2.0",
+                "hyperf/contract": "~2.2.0",
+                "hyperf/service-governance": "~2.2.0",
+                "hyperf/utils": "~2.2.0",
+                "php": ">=7.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\ServiceGovernanceConsul\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\ServiceGovernanceConsul\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A consul adapter for service governance.",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "consul-adapter",
+                "hyperf",
+                "php",
+                "service-governance",
+                "swoole"
+            ],
+            "support": {
+                "docs": "https://hyperf.wiki",
+                "issues": "https://github.com/hyperf/hyperf/issues",
+                "pull-request": "https://github.com/hyperf/hyperf/pulls",
+                "source": "https://github.com/hyperf/hyperf"
+            },
+            "time": "2021-10-26T09:05:36+00:00"
         },
         {
             "name": "hyperf/utils",
@@ -2243,6 +2640,81 @@
                 }
             ],
             "time": "2021-11-10T11:33:52+00:00"
+        },
+        {
+            "name": "markrogoyski/math-php",
+            "version": "v2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/markrogoyski/math-php.git",
+                "reference": "cb4a3968f64830ce7f479c8f2ca8fa9eb3980db1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/markrogoyski/math-php/zipball/cb4a3968f64830ce7f479c8f2ca8fa9eb3980db1",
+                "reference": "cb4a3968f64830ce7f479c8f2ca8fa9eb3980db1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.0",
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "phploc/phploc": "*",
+                "phpmd/phpmd": "^2.6",
+                "phpstan/phpstan": "*",
+                "phpunit/phpunit": "^8.5",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MathPHP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Rogoyski",
+                    "email": "mark@rogoyski.com",
+                    "homepage": "https://github.com/markrogoyski",
+                    "role": "Lead developer"
+                },
+                {
+                    "name": "Kevin Nowaczyk",
+                    "homepage": "https://github.com/Beakerboy",
+                    "role": "Developer"
+                },
+                {
+                    "name": "MathPHP Community of Contributors",
+                    "homepage": "https://github.com/markrogoyski/math-php/graphs/contributors"
+                }
+            ],
+            "description": "Math Library for PHP. Features descriptive statistics and regressions; Continuous and discrete probability distributions; Linear algebra with matrices and vectors, Numerical analysis; special mathematical functions; Algebra",
+            "homepage": "https://github.com/markrogoyski/math-php/",
+            "keywords": [
+                "algebra",
+                "combinatorics",
+                "distributions",
+                "linear algebra",
+                "math",
+                "mathematics",
+                "matrix",
+                "numerical analysis",
+                "probability",
+                "regressions",
+                "statistics"
+            ],
+            "support": {
+                "issues": "https://github.com/markrogoyski/math-php/issues",
+                "source": "https://github.com/markrogoyski/math-php/tree/v2.4.0"
+            },
+            "time": "2021-07-28T01:32:13+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3181,6 +3653,43 @@
                 "source": "https://github.com/php-fig/simple-cache/tree/master"
             },
             "time": "2017-10-23T01:57:42+00:00"
+        },
+        {
+            "name": "pudongping/hyperf-json-rpc-demo-interface",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pudongping/hyperf-json-rpc-demo-interface.git",
+                "reference": "6a74c87449a51926b53dbc7ee0756ddde6ce30f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pudongping/hyperf-json-rpc-demo-interface/zipball/6a74c87449a51926b53dbc7ee0756ddde6ce30f3",
+                "reference": "6a74c87449a51926b53dbc7ee0756ddde6ce30f3",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pudongping\\JsonRpc\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "pudongping",
+                    "email": "276558492@qq.com"
+                }
+            ],
+            "description": "hyperf-json-rpc-demo 服务提供者和服务消费者公用的接口",
+            "support": {
+                "issues": "https://github.com/pudongping/hyperf-json-rpc-demo-interface/issues",
+                "source": "https://github.com/pudongping/hyperf-json-rpc-demo-interface/tree/1.0.0"
+            },
+            "time": "2021-11-19T20:45:05+00:00"
         },
         {
             "name": "ralouphie/getallheaders",

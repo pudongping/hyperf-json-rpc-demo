@@ -11,16 +11,38 @@ declare(strict_types=1);
  */
 namespace App\Controller;
 
+use Pudongping\JsonRpc\Contract\CalculatorServiceInterface;
+use Hyperf\Di\Annotation\Inject;
+use Hyperf\HttpServer\Annotation\AutoController;
+
+/**
+ * @AutoController()
+ * Class IndexController
+ * @package App\Controller
+ */
 class IndexController extends AbstractController
 {
+
+    /**
+     * @Inject
+     * @var CalculatorServiceInterface
+     */
+    protected $calculatorService;
+
     public function index()
     {
-        $user = $this->request->input('user', 'Hyperf');
-        $method = $this->request->getMethod();
 
-        return [
-            'method' => $method,
-            'message' => "Hello {$user}.",
-        ];
+        // var_dump('首页');
+
     }
+
+    public function test()
+    {
+        $add = $this->calculatorService->add(2, 3);
+        var_dump('测试加法 ====> ', $add);
+
+        $minus = $this->calculatorService->minus(2, 3);
+        var_dump('测试减法 ====> ', $minus);
+    }
+
 }
